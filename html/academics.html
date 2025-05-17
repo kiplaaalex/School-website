@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | Taita Mauche Secondary School</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .academics-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/academics-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        .subject-card {
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--primary-color);
+        }
+        .subject-card:hover {
+            transform: translateY(-5px);
+        }
+        .tabs-nav .nav-link {
+            color: var(--dark-color);
+            font-weight: 600;
+            border: none;
+            padding: 12px 20px;
+            position: relative;
+        }
+        .tabs-nav .nav-link.active {
+            color: var(--primary-color);
+            background: transparent;
+        }
+        .tabs-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        .tabs-nav .nav-link:not(.active):hover {
+            color: var(--primary-color);
+        }
+        .department-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .department-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .department-card .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="School Logo" height="50" class="d-inline-block align-top me-2">
+                Taita Mauche Secondary
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2" href="login.html">Portal Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="academics-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Academic Excellence</h1>
+            <p class="lead">Our comprehensive curriculum prepares students for university and beyond</p>
+        </div>
+    </section>
+
+    <!-- Curriculum Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Our Curriculum</h2>
+                    <p class="lead">Taita Mauche Secondary follows the Kenyan Competency-Based Curriculum (CBC) at Junior Secondary and the 8-4-4 system at Senior Secondary.</p>
+                    <p>Our academic program is designed to develop critical thinking, creativity, and problem-solving skills while meeting all Kenya Institute of Curriculum Development (KICD) requirements.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Junior Secondary (Grades 7-9)</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Senior Secondary (Grades 10-12)</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>STEM Focus</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Arts & Sports</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#departments" class="btn btn-primary mt-3">Explore Departments</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/curriculum.jpg" alt="Curriculum" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Performance -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Academic Performance</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <h3 class="display-4 text-primary fw-bold">92%</h3>
+                            <p class="lead">KCSE Pass Rate</p>
+                            <p class="small">2023 Kenya Certificate of Secondary Education results</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <h3 class="display-4 text-primary fw-bold">3.8</h3>
+                            <p class="lead">Mean Score</p>
+                            <p class="small">Average grade in 2023 KCSE examinations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <h3 class="display-4 text-primary fw-bold">85%</h3>
+                            <p class="lead">University Transition</p>
+                            <p class="small">Of our graduates join universities annually</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="results.html" class="btn btn-outline-primary">View Detailed Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Offered -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Subjects Offered</h2>
+            <ul class="nav nav-tabs tabs-nav justify-content-center mb-5" id="subjectTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="junior-tab" data-bs-toggle="tab" data-bs-target="#junior" type="button" role="tab">Junior Secondary</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="senior-tab" data-bs-toggle="tab" data-bs-target="#senior" type="button" role="tab">Senior Secondary</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="subjectTabsContent">
+                <div class="tab-pane fade show active" id="junior" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-square-root-alt fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Mathematics</h4>
+                                    </div>
+                                    <p>Core subject covering algebra, geometry, statistics, and financial literacy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-flask fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Integrated Science</h4>
+                                    </div>
+                                    <p>Combined study of Physics, Chemistry, and Biology with practical applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-language fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">English</h4>
+                                    </div>
+                                    <p>Language skills development including reading, writing, speaking and listening.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-globe-africa fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Kiswahili</h4>
+                                    </div>
+                                    <p>National language study focusing on communication and East African culture.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-landmark fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Social Studies</h4>
+                                    </div>
+                                    <p>Combined Geography, History and Civics with focus on Kenyan heritage.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-laptop-code fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Computer Science</h4>
+                                    </div>
+                                    <p>Digital literacy, programming basics, and technology applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="senior" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-atom fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Physics</h4>
+                                    </div>
+                                    <p>Study of matter, energy, and their interactions with practical experiments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-vial fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Chemistry</h4>
+                                    </div>
+                                    <p>Composition, structure, properties and changes of matter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-dna fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Biology</h4>
+                                    </div>
+                                    <p>Study of living organisms and their vital processes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-calculator fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Mathematics</h4>
+                                    </div>
+                                    <p>Advanced algebra, calculus, geometry and statistics.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-book fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">English</h4>
+                                    </div>
+                                    <p>Literature, composition and advanced language skills.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card subject-card h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="fas fa-globe fa-2x text-primary me-3"></i>
+                                        <h4 class="mb-0">Geography</h4>
+                                    </div>
+                                    <p>Physical and human geography with field studies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Departments -->
+    <section class="py-5 bg-light" id="departments">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Academic Departments</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card h-100">
+                        <div class="card-header">
+                            <h4 class="mb-0">Sciences Department</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Our science department offers Physics, Chemistry, Biology and Computer Studies with well-equipped laboratories for practical learning.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> 4 Modern Laboratories</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Science Club Activities</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Annual Science Fair</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="sciences.html" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card h-100">
+                        <div class="card-header">
+                            <h4 class="mb-0">Humanities Department</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>The humanities department covers History, Geography, CRE, IRE and Life Skills to develop well-rounded citizens.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Debate Club</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Model UN Program</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Field Trips</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="humanities.html" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card h-100">
+                        <div class="card-header">
+                            <h4 class="mb-0">Languages Department</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>We offer English, Kiswahili, French and German with emphasis on communication skills and cultural appreciation.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Language Labs</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Drama Club</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Exchange Programs</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="languages.html" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card h-100">
+                        <div class="card-header">
+                            <h4 class="mb-0">Mathematics Department</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Our mathematics program develops problem-solving skills through algebra, geometry, calculus and statistics.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Math Olympiad Team</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Practical Applications</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Financial Literacy</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="mathematics.html" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card h-100">
+                        <div class="card-header">
+                            <h4 class="mb-0">Technical Department</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Technical subjects include Business Studies, Agriculture, Home Science and Computer Studies.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> School Farm</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Computer Lab</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Entrepreneurship Program</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="technical.html" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="department-card card h-100">
+                        <div class="card-header">
+                            <h4 class="mb-0">Creative Arts Department</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Music, Art & Design, and Drama programs to nurture creativity and talent development.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> School Band</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Art Exhibitions</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Drama Festivals</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="arts.html" class="btn btn-sm btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Calendar -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Academic Calendar</h2>
+                    <p>Our school year is divided into three terms with breaks in between. Each term includes academic, co-curricular and examination periods.</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th>Term</th>
+                                    <th>Duration</th>
+                                    <th>Key Events</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jan - Apr</td>
+                                    <td>Opening, Mid-term, Games, Exams</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>May - Aug</td>
+                                    <td>Opening, Music Festivals, Mid-term, Exams</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sep - Nov</td>
+                                    <td>Opening, Drama Festivals, KCSE, KCPE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="calendar.html" class="btn btn-primary mt-3">View Full Calendar</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-4">Upcoming Academic Events</h3>
+                            <div class="list-group">
+                                <div class="list-group-item border-0 py-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Form 1 Parent Meeting</h5>
+                                        <small class="text-primary">15 Mar 2024</small>
+                                    </div>
+                                    <p class="mb-1">School Hall, 10:00 AM</p>
+                                </div>
+                                <div class="list-group-item border-0 py-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Mid-Term Exams</h5>
+                                        <small class="text-primary">20-24 Mar 2024</small>
+                                    </div>
+                                    <p class="mb-1">All Classes</p>
+                                </div>
+                                <div class="list-group-item border-0 py-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Science Fair</h5>
+                                        <small class="text-primary">5 Apr 2024</small>
+                                    </div>
+                                    <p class="mb-1">School Grounds, 8:00 AM - 3:00 PM</p>
+                                </div>
+                                <div class="list-group-item border-0 py-3">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Term 1 Closing</h5>
+                                        <small class="text-primary">12 Apr 2024</small>
+                                    </div>
+                                    <p class="mb-1">All Students</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Taita Mauche Secondary</h5>
+                    <p>Providing quality education in Njoro, Nakuru County since 1985. Our mission is to nurture holistic development and academic excellence.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="academics.html" class="text-white">Academics</a></li>
+                        <li class="mb-2"><a href="admissions.html" class="text-white">Admissions</a></li>
+                        <li class="mb-2"><a href="news.html" class="text-white">News & Events</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Njoro, Nakuru County, Kenya</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +254 7XX XXX XXX</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@taitamauche.sc.ke</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Taita Mauche Secondary School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by School ICT Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

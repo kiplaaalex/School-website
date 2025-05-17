@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Taita Mauche Secondary School</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/about-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        .history-timeline {
+            position: relative;
+            padding-left: 50px;
+        }
+        .history-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--primary-color);
+        }
+        .staff-card {
+            transition: transform 0.3s ease;
+        }
+        .staff-card:hover {
+            transform: translateY(-10px);
+        }
+        .staff-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="School Logo" height="50" class="d-inline-block align-top me-2">
+                Taita Mauche Secondary
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2" href="login.html">Portal Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">About Our School</h1>
+            <p class="lead">Discover our rich history, mission, and the dedicated team behind Taita Mauche Secondary</p>
+        </div>
+    </section>
+
+    <!-- School History -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/images/school-history.jpg" alt="School History" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Our History</h2>
+                    <p class="lead">Established in 1985, Taita Mauche Secondary School has been a pillar of academic excellence in Njoro, Nakuru County.</p>
+                    <div class="history-timeline mt-5">
+                        <div class="timeline-item">
+                            <h5>1985</h5>
+                            <p>School founded with 50 students and 3 teachers in temporary structures</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>1992</h5>
+                            <p>First permanent classrooms constructed through community fundraising</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2005</h5>
+                            <p>Recognized as a top-performing school in Nakuru County</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>2018</h5>
+                            <p>New science laboratories and computer center opened</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-bullseye fa-3x text-primary mb-4"></i>
+                            <h3 class="h4 mb-3">Our Mission</h3>
+                            <p>To provide quality education that nurtures holistic development, fosters critical thinking, and prepares students for the challenges of the 21st century through innovative teaching methods and a supportive learning environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-eye fa-3x text-primary mb-4"></i>
+                            <h3 class="h4 mb-3">Our Vision</h3>
+                            <p>To be a center of academic excellence that produces well-rounded individuals equipped with knowledge, skills, and values to contribute positively to society and compete globally in various fields of endeavor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Core Values</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-gem fa-2x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Integrity</h4>
+                            <p>We uphold the highest standards of honesty, ethics, and moral principles in all our actions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-handshake fa-2x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Respect</h4>
+                            <p>We value diversity and treat all individuals with dignity, fairness, and compassion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-medal fa-2x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Excellence</h4>
+                            <p>We strive for the highest quality in all aspects of teaching, learning, and school operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Teamwork</h4>
+                            <p>We collaborate effectively with all stakeholders to achieve our common goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-lightbulb fa-2x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Innovation</h4>
+                            <p>We embrace creativity and continuous improvement in our teaching methods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-heart fa-2x text-primary mb-3"></i>
+                            <h4 class="h5 mb-3">Service</h4>
+                            <p>We are committed to serving our community and making a positive impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Leadership -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Meet Our Leadership</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card staff-card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <img src="assets/images/principal.jpg" alt="Principal" class="staff-img rounded-circle mb-4">
+                            <h4 class="h5 mb-2">Mr. John Kamau</h4>
+                            <p class="text-primary mb-3">Principal</p>
+                            <p class="small">M.Ed Educational Administration, 15+ years experience</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-primary mx-2"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-primary mx-2"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card staff-card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <img src="assets/images/deputy.jpg" alt="Deputy Principal" class="staff-img rounded-circle mb-4">
+                            <h4 class="h5 mb-2">Mrs. Grace Wambui</h4>
+                            <p class="text-primary mb-3">Deputy Principal (Academics)</p>
+                            <p class="small">M.Sc Chemistry, 12 years teaching experience</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-primary mx-2"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-primary mx-2"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card staff-card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <img src="assets/images/deputy2.jpg" alt="Deputy Principal" class="staff-img rounded-circle mb-4">
+                            <h4 class="h5 mb-2">Mr. Peter Mwangi</h4>
+                            <p class="text-primary mb-3">Deputy Principal (Administration)</p>
+                            <p class="small">B.Ed Arts, 10 years administrative experience</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-primary mx-2"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-primary mx-2"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card staff-card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <img src="assets/images/chairman.jpg" alt="Board Chairman" class="staff-img rounded-circle mb-4">
+                            <h4 class="h5 mb-2">Dr. James Njoroge</h4>
+                            <p class="text-primary mb-3">Board Chairman</p>
+                            <p class="small">PhD Economics, Community Leader</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-primary mx-2"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="text-primary mx-2"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Facilities -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Facilities</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/images/library.jpg" class="card-img-top" alt="Library">
+                        <div class="card-body">
+                            <h4 class="h5">Modern Library</h4>
+                            <p>Our well-stocked library with over 10,000 books and digital resources supports research and reading culture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/images/lab.jpg" class="card-img-top" alt="Science Lab">
+                        <div class="card-body">
+                            <h4 class="h5">Science Laboratories</h4>
+                            <p>State-of-the-art labs for Physics, Chemistry, and Biology with modern equipment for practical learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/images/sports.jpg" class="card-img-top" alt="Sports Field">
+                        <div class="card-body">
+                            <h4 class="h5">Sports Facilities</h4>
+                            <p>Football pitch, basketball court, volleyball court, and athletics track for comprehensive sports programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Taita Mauche Secondary</h5>
+                    <p>Providing quality education in Njoro, Nakuru County since 1985. Our mission is to nurture holistic development and academic excellence.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="academics.html" class="text-white">Academics</a></li>
+                        <li class="mb-2"><a href="admissions.html" class="text-white">Admissions</a></li>
+                        <li class="mb-2"><a href="news.html" class="text-white">News & Events</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Njoro, Nakuru County, Kenya</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +254 7XX XXX XXX</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@taitamauche.sc.ke</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Taita Mauche Secondary School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by School ICT Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
