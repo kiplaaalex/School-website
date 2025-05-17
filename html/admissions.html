@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Taita Mauche Secondary School</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .admissions-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/admissions-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+        }
+        .process-step {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 40px;
+        }
+        .process-step::before {
+            content: attr(data-step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .fee-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .fee-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .form-section {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="School Logo" height="50" class="d-inline-block align-top me-2">
+                Taita Mauche Secondary
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="academics.html">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2" href="login.html">Portal Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="admissions-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Join Our Community</h1>
+            <p class="lead">Applications for the 2024/2025 academic year are now open</p>
+        </div>
+    </section>
+
+    <!-- Admissions Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Admissions Process</h2>
+                    <p class="lead">Taita Mauche Secondary School admits students into Form 1 (Grade 7) and other classes based on availability.</p>
+                    <p>We welcome applications from students of all backgrounds who demonstrate academic potential and commitment to our school values.</p>
+                    <div class="mt-5">
+                        <div class="process-step" data-step="1">
+                            <h4>Application Submission</h4>
+                            <p>Complete the online application form or download and submit a physical form with required documents.</p>
+                        </div>
+                        <div class="process-step" data-step="2">
+                            <h4>Entrance Assessment</h4>
+                            <p>All applicants take an entrance exam in Mathematics, English and General Knowledge.</p>
+                        </div>
+                        <div class="process-step" data-step="3">
+                            <h4>Interview</h4>
+                            <p>Shortlisted candidates and parents attend an interview with the admissions panel.</p>
+                        </div>
+                        <div class="process-step" data-step="4">
+                            <h4>Admission Offer</h4>
+                            <p>Successful candidates receive admission letters with reporting instructions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-4">Admissions Timeline 2024</h3>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="bg-primary text-white">
+                                        <tr>
+                                            <th>Activity</th>
+                                            <th>Dates</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Applications Open</td>
+                                            <td>1 October 2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Application Deadline</td>
+                                            <td>31 January 2024</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Entrance Exams</td>
+                                            <td>10 February 2024</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Interviews</td>
+                                            <td>24-28 February 2024</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Admission Letters Sent</td>
+                                            <td>15 March 2024</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Reporting Date</td>
+                                            <td>8 May 2024</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#requirements" class="btn btn-outline-primary">Requirements</a>
+                                <a href="#fees" class="btn btn-outline-primary">Fee Structure</a>
+                                <a href="#apply" class="btn btn-primary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="py-5 bg-light" id="requirements">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Admission Requirements</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0">Form 1 Admission</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Completed application form</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Copy of birth certificate</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> KCPE results slip (original and copy)</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Two recent passport photos</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Medical report from recognized hospital</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Recommendation letter from previous school</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Transfer letter (for those from other secondary schools)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0">Other Forms Admission</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Completed application form</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Copy of birth certificate</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Latest academic reports (originals and copies)</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Two recent passport photos</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Medical report from recognized hospital</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> Recommendation letter from current school</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> Transfer letter and clearance from previous school</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-info mt-4">
+                <i class="fas fa-info-circle me-2"></i> International students must provide equivalency certificates from KNEC and valid study permits.
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="py-5" id="fees">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Fee Structure 2024</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-bordered mb-0 fee-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Form 1-2</th>
+                                            <th>Form 3-4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tuition Fees</td>
+                                            <td>KSh 25,000</td>
+                                            <td>KSh 28,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boarding Fees</td>
+                                            <td>KSh 40,000</td>
+                                            <td>KSh 40,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Activity Fees</td>
+                                            <td>KSh 5,000</td>
+                                            <td>KSh 5,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Caution Money (Refundable)</td>
+                                            <td>KSh 5,000</td>
+                                            <td>KSh 5,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Medical Fund</td>
+                                            <td>KSh 3,000</td>
+                                            <td>KSh 3,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Per Term</td>
+                                            <td>KSh 78,000</td>
+                                            <td>KSh 81,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="h6">Payment Information</h5>
+                                    <ul class="small">
+                                        <li>Fees payable in full at beginning of term</li>
+                                        <li>Bank: Kenya Commercial Bank</li>
+                                        <li>Account: 1234567890</li>
+                                        <li>Branch: Njoro</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="h6">Discounts Available</h5>
+                                    <ul class="small">
+                                        <li>10% discount for siblings</li>
+                                        <li>15% discount for full year payment</li>
+                                        <li>Scholarships for needy students</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-warning mt-4">
+                        <i class="fas fa-exclamation-triangle me-2"></i> Fees are subject to change as per Ministry of Education guidelines. The above figures are for Term 1, 2024.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarships -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Scholarships & Bursaries</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-award fa-3x text-primary mb-4"></i>
+                            <h4 class="h5 mb-3">Academic Excellence</h4>
+                            <p>Merit-based scholarships for top-performing students in KCPE or our entrance exam.</p>
+                            <a href="scholarships.html#academic" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-running fa-3x text-primary mb-4"></i>
+                            <h4 class="h5 mb-3">Sports & Arts</h4>
+                            <p>Talent-based scholarships for students excelling in sports, music, or visual arts.</p>
+                            <a href="scholarships.html#talent" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-hands-helping fa-3x text-primary mb-4"></i>
+                            <h4 class="h5 mb-3">Needy Students Fund</h4>
+                            <p>Need-based bursaries for economically disadvantaged but academically promising students.</p>
+                            <a href="scholarships.html#needy" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="scholarships.html" class="btn btn-primary">View All Scholarship Opportunities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="py-5" id="apply">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Application Form</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5 form-section">
+                            <form id="admissionForm">
+                                <div class="mb-4">
+                                    <h4 class="h5 mb-4 text-primary">Student Information</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="firstName" class="form-label">First Name *</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="lastName" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="dob" class="form-label">Date of Birth *</label>
+                                            <input type="date" class="form-control" id="dob" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="gender" class="form-label">Gender *</label>
+                                            <select class="form-select" id="gender" required>
+                                                <option value="">Select Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="currentSchool" class="form-label">Current School *</label>
+                                            <input type="text" class="form-control" id="currentSchool" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="classApplying" class="form-label">Class Applying For *</label>
+                                            <select class="form-select" id="classApplying" required>
+                                                <option value="">Select Class</option>
+                                                <option value="Form 1">Form 1</option>
+                                                <option value="Form 2">Form 2</option>
+                                                <option value="Form 3">Form 3</option>
+                                                <option value="Form 4">Form 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h4 class="h5 mb-4 text-primary">Parent/Guardian Information</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="parentName" class="form-label">Parent/Guardian Name *</label>
+                                            <input type="text" class="form-control" id="parentName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="relationship" class="form-label">Relationship *</label>
+                                            <select class="form-select" id="relationship" required>
+                                                <option value="">Select Relationship</option>
+                                                <option value="Father">Father</option>
+                                                <option value="Mother">Mother</option>
+                                                <option value="Guardian">Guardian</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="parentEmail" class="form-label">Email Address *</label>
+                                            <input type="email" class="form-control" id="parentEmail" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="parentPhone" class="form-label">Phone Number *</label>
+                                            <input type="tel" class="form-control" id="parentPhone" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="parentAddress" class="form-label">Physical Address *</label>
+                                            <textarea class="form-control" id="parentAddress" rows="2" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h4 class="h5 mb-4 text-primary">Academic Background</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="kcpeIndex" class="form-label">KCPE Index Number (if applicable)</label>
+                                            <input type="text" class="form-control" id="kcpeIndex">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="kcpeScore" class="form-label">KCPE Score (if applicable)</label>
+                                            <input type="number" class="form-control" id="kcpeScore" min="0" max="500">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="previousSchools" class="form-label">Previous Schools Attended (with dates)</label>
+                                            <textarea class="form-control" id="previousSchools" rows="2"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="achievements" class="form-label">Academic Achievements & Awards</label>
+                                            <textarea class="form-control" id="achievements" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h4 class="h5 mb-4 text-primary">Extracurricular Activities</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Sports (check all that apply)</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="football">
+                                                <label class="form-check-label" for="football">Football</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="basketball">
+                                                <label class="form-check-label" for="basketball">Basketball</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="athletics">
+                                                <label class="form-check-label" for="athletics">Athletics</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="volleyball">
+                                                <label class="form-check-label" for="volleyball">Volleyball</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Clubs & Societies</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="debate">
+                                                <label class="form-check-label" for="debate">Debate Club</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="science">
+                                                <label class="form-check-label" for="science">Science Club</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="music">
+                                                <label class="form-check-label" for="music">Music Club</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="scouts">
+                                                <label class="form-check-label" for="scouts">Scouts</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h4 class="h5 mb-4 text-primary">Documents Upload</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="birthCertificate" class="form-label">Birth Certificate *</label>
+                                            <input type="file" class="form-control" id="birthCertificate" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="kcpeResults" class="form-label">KCPE Results Slip (if applicable)</label>
+                                            <input type="file" class="form-control" id="kcpeResults">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="reportCards" class="form-label">Latest Report Cards *</label>
+                                            <input type="file" class="form-control" id="reportCards" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="photo" class="form-label">Passport Photo *</label>
+                                            <input type="file" class="form-control" id="photo" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 form-check">
+                                    <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                                    <label class="form-check-label" for="agreeTerms">I certify that all information provided is accurate and complete *</label>
+                                </div>
+
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+                                    <button type="button" class="btn btn-outline-secondary">Download PDF Form</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Admissions -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Need Help With Admissions?</h2>
+            <p class="lead mb-5">Our admissions team is ready to answer your questions and guide you through the process.</p>
+            <a href="contact.html" class="btn btn-light btn-lg me-3">Contact Us</a>
+            <a href="tel:+2547XXXXXXXX" class="btn btn-outline-light btn-lg">Call Admissions</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Taita Mauche Secondary</h5>
+                    <p>Providing quality education in Njoro, Nakuru County since 1985. Our mission is to nurture holistic development and academic excellence.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white">About Us</a></li>
+                        <li class="mb-2"><a href="academics.html" class="text-white">Academics</a></li>
+                        <li class="mb-2"><a href="admissions.html" class="text-white">Admissions</a></li>
+                        <li class="mb-2"><a href="news.html" class="text-white">News & Events</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Njoro, Nakuru County, Kenya</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +254 7XX XXX XXX</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@taitamauche.sc.ke</li>
+                        <li><i class="fas fa-clock me-2"></i> Mon-Fri: 8:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Taita Mauche Secondary School. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by School ICT Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
